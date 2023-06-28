@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>HONGO | Account</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- main style file -->
+    <link rel="stylesheet" href="css/account.css">
+    <script src="https://kit.fontawesome.com/adc5c6a0d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    <!-- start header -->
+    <header>
+        <div class="container">
+            <img  id ="logo "src="images/logo.png">
+            <nav>
+                <ul>
+                    <li onclick="location.href='index.html'">Home <span></span></li>
+                    <li onclick="location.href='collection.html'">Collection <span></span></li>
+                    <li onclick="location.href='products.html'">Products <span></span></li>
+                    <li onclick="location.href='about.html'">About us <span></span></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <i  class="fa-regular fa-user"></i>
+                <i onclick="Location.href='favorite.html'" class="fa-regular fa-heart"></i>
+                <i onclick="location.href='cart.html'" class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </header>
+    <div class="loginheader">
+            <h3>My account</h3>
+            <div class="links">
+                <ul>
+                    <li>Home</li>
+                    <li>My account</li>
+                </ul>
+        </div>
+    </div>
+    <!-- end header -->
+    <!-- start login section -->
+    <section>
+        <div class="container">
+        <h2>Account</h2>
+        <div class="profilediv">
+            <div class="uploadpic" >
+                <img id ="imgprofile"src="images/profileimg.jpg" alt="">
+                <input type="file" name="" id="file">
+                <label for="file" id="uploadbtn">Choose Photo</label>
+            </div>
+            <div style="text-align: center;">
+               <h3 id="name"></h3>
+               <h3 id="email"></h3>
+            </div>
+            <div>
+                <ul style="list-style-type: none ;line-height: 40px; ">
+                    <li><i onclick="location.href='cart.html'" class="fa-solid fa-cart-shopping"></i> Carts</li>
+                    <li><i onclick="Location.href='favorite.html'" class="fa-solid fa-heart"></i>Favorites</li>
+                    <li><i class="fa-sharp fa-solid fa-bag-shopping"></i> Orders</li>
+                    <li><i class="fa-solid fa-credit-card"></i>Payments</li>
+                    <li><i class="fa-solid fa-gear"></i>Setting</li>
+                    <li><i class="fa-solid fa-right-from-bracket"></i>Sign Out</li>
+                </ul>
+            </div>
+            
+            
+        </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="container">
+            <div class="main">
+                <div class="sec">
+                    <h4>About company overview</h4>
+                    <p>Big clothes brand hongo. Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem ipsum.</p>
+                    <ul class="icons">
+                        <li> <a href=""><i class="fa-brands fa-cc-visa"></i></a></li>
+                        <li> <a href=""><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-cc-apple-pay"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-cc-paypal"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-cc-amazon-pay"></i></a></li>
+                    </ul>
+                </div>
+                <div class="sec">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li>Women collection</li>
+                        <li>Men collection</li>
+                        <li>Child collection</li>
+                        <li>Accessories</li>
+                        <li>Leather shoes</li>
+                    </ul>
+                </div><div class="sec">
+                    <h4>Customer</h4>
+                    <ul>
+                        <li>Help and support</li>
+                        <li>Shipping and delivery</li>
+                        <li>Payment method</li>
+                        <li>Terms and conditions</li>
+                        <li>Privacy policy</li>
+                    </ul>
+                </div><div class="sec">
+                    <h4>Store contact info</h4>
+                    <ul>
+                        <li>Phone: +1 234 567 890</li>
+                        <li>Fax: +1 234 567 890</li>
+                        <li>Address: 12 st anonymous</li>
+                        <li>Email: info@domain.com</li>
+                        <li><ul class="icons">
+                            <li> <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li> <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li> <a href=" https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li> <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i> </a></li>
+                            <li> <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i> </a></li>
+                        </ul></li>
+                    </ul>
+                </div><div class="sec">
+                    <h4>Last chance to win our discount!</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text.</p>
+                    
+                </div>
+            </div>
+            <div class="foot">
+                <p>&copy;2023 HONGO is Proudly Powered by <span>3E2F <i class="fa-regular fa-heart"></i></span></p>
+            </div>
+        </div>
+    </div>
+     <!-- end login section -->
+    <script src="index.js"></script>
+    <script>
+        const div= document.getElementsByClassName("uploadpic")[0]
+        const img =document.getElementById("imgprofile");
+        const file =document.getElementById("file");
+        const label =document.getElementById("uploadbtn");
+        div.addEventListener('mouseenter',function(){
+            label.style.display="block"
+        })
+        div.addEventListener('mouseleave',function(){
+            label.style.display="none"
+        })
+
+        file.addEventListener('change',function(){
+            const chosefile=this.files[0];
+            if(chosefile){
+                const reader=new FileReader();
+
+                reader.addEventListener('load',function(){
+                    img.setAttribute('src',reader.result)
+                })
+                reader.readAsDataURL(chosefile)
+            }
+        })
+        ///get user info from session storage 
+        document.getElementById("name").innerHTML=sessionStorage.getItem("userName");
+        document.getElementById("email").innerHTML=sessionStorage.getItem("userEmail");
+
+    
+
+    </script>
+</body>
+</html>

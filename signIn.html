@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HONGO | SIGNIN</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- base css -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- main style file -->
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+<body>
+    <!-- start header -->
+    <header>
+        <div class="container">
+            <img  id ="logo "src="images/logo.png">
+            <nav>
+                <ul>
+                    <li>Home<span></span></li>
+                    <li>Collection<span></span></li>
+                    <li >Products<span></span></li>
+                    <li>About us<span></span></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <i class="fa-regular fa-user"></i>
+                <i onclick="openFavoritePage()" class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+        <section>
+        <div class="container">
+        <h2>Sign In</h2>
+        <div class="signinform">
+            <form action="index.html">
+                <div class="username">
+                    <label for="uName">Username</label>
+                    <br>
+                    <input type="text" name="uName">
+                </div>
+                <div class="email">
+                    <label for="uemail">Email</label>
+                    <br>
+                    <input type="email" name="uemail">
+                </div>
+                <div class="password">
+                    <label for="uPass">Password</label>
+                    <br>
+                    <input type="password" oninput="getpass(this)" name="uPass">
+                </div>
+                <div class=" repeatpassword">
+                    <label for="uPass2">Repeat Password</label>
+                    <br>
+                    <input type="password" oninput="validatePassword(this)" name="uPass2">
+                    <br>
+                    <span id="invalidpass"></span>
+                    <br>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="SIGN IN">
+                </div>
+
+            </form>
+        </div>
+        </div>
+    </section>
+    <!-- start footer  -->
+    <div class="footer">
+        <div class="container">
+            <div class="main">
+                <div class="sec">
+                    <h4>About company overview</h4>
+                    <p>Big clothes brand hongo. Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem ipsum.</p>
+                    <ul class="icons">
+                        <li> <a href=""><i class="fa-brands fa-cc-visa"></i></a></li>
+                        <li> <a href=""><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-cc-apple-pay"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-cc-paypal"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-cc-amazon-pay"></i></a></li>
+                    </ul>
+                </div>
+                <div class="sec">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li>Women collection</li>
+                        <li>Men collection</li>
+                        <li>Child collection</li>
+                        <li>Accessories</li>
+                        <li>Leather shoes</li>
+                    </ul>
+                </div><div class="sec">
+                    <h4>Customer</h4>
+                    <ul>
+                        <li>Help and support</li>
+                        <li>Shipping and delivery</li>
+                        <li>Payment method</li>
+                        <li>Terms and conditions</li>
+                        <li>Privacy policy</li>
+                    </ul>
+                </div><div class="sec">
+                    <h4>Store contact info</h4>
+                    <ul>
+                        <li>Phone: +1 234 567 890</li>
+                        <li>Fax: +1 234 567 890</li>
+                        <li>Address: 12 st anonymous</li>
+                        <li>Email: info@domain.com</li>
+                        <li><ul class="icons">
+                            <li> <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li> <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li> <a href=" https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li> <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i> </a></li>
+                            <li> <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i> </a></li>
+                        </ul></li>
+                    </ul>
+                </div><div class="sec">
+                    <h4>Last chance to win our discount!</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text.</p>
+                    
+                </div>
+            </div>
+            <div class="foot">
+                <p>&copy;2023 HONGO is Proudly Powered by ThemeZaa</p>
+            </div>
+        </div>
+    </div>
+  
+    <!-- end footer  -->
+  <script src="index.js"></script>
+</body>
+</html>

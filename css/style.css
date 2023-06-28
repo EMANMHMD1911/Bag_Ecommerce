@@ -1,0 +1,630 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    box-sizing:border-box;
+
+} */
+/* start header  */
+/* header .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+
+}
+/* 2 headers links */
+/*header .container nav ul li,
+.loginheader .links ul li,
+.favorite_header .links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding:10px
+}
+header .container nav ul li{
+    position: relative;
+}
+header .container nav ul li span{
+    position: absolute;
+    width:15px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transform-origin:0 0;
+    background-color: #1E1E1E;
+    transition: all 0.5s ease-in-out;
+}
+header .container nav ul li:hover span{
+    transform:scaleX(4);
+    opacity: 1;
+} */
+
+
+header .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    
+
+}
+header .container nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding:10px;
+     position: relative;
+    cursor: pointer;
+
+}
+header .container nav ul li span{
+    position: absolute;
+    width:20px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transform-origin:0 0;
+    background-color: #1E1E1E;
+    transition: all 0.5s ease-in-out;
+}
+header .container nav ul li:hover span{
+    transform:scaleX(4);
+    opacity: 1;
+}
+header .container .icons i{
+    cursor: pointer;
+
+}
+
+/* end header  */
+body{
+    transition: all 1s ease-in-out;
+    font-family:sans-serif; 
+}
+
+.clear{
+    clear: both;
+}
+.container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.up{
+    color: #CF9B3C;
+        width: 30px;
+    height: 30px;
+    text-align: center;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+   transition: 2s ease-in-out;
+    transform: rotate(270deg);
+    font-size: 60px;
+    font-weight: 800;
+    z-index: 1000;
+    text-decoration: none;
+
+}
+/* start header-nav  */
+
+header .containerr{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    
+
+}
+/* 2 headers links */
+.loginheader .links ul li{
+    color: #808080;
+}
+header .containerr nav ul li,
+.loginheader .links ul li,
+.favorite_header .links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding:10px
+    
+}
+header .containerr nav ul li{
+    position: relative;
+    cursor: pointer;
+}
+header .containerr nav ul li span{
+    position: absolute;
+    width:20px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transform-origin:0 0;
+    background-color: #1E1E1E;
+    transition: all 0.5s ease-in-out;
+}
+header .containerr nav ul li:hover span{
+    transform:scaleX(4);
+    opacity: 1;
+}
+header .containerr .icons i{
+    cursor: pointer;
+
+}
+
+/* end header-nav  */
+/* start header  */
+
+
+.header ul li {
+    display: inline-block;
+    
+}
+
+
+/* -------------- */
+.header .slideshow-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+  }
+  .header img {
+      width: 100vw;
+    height: 100vh;
+  }
+  .header .mySlides {
+    display: none;
+  }
+  .header .text {
+      color:  #232323;
+      padding: 8px 12px;
+    position: absolute;
+    top: 30%;
+    left: 17%;
+    
+  }
+  .header .text h1{
+  font-size: 40px;
+  width: 300px;
+  }
+  .header .text h3{
+      font-size: 12px;
+  }
+  .header .text h2{
+      font-size: 20px;
+  }
+  .header .text h2 span{
+      text-decoration: line-through;
+  }
+  .header .text p{
+      font-size: 14px;
+      color: #808080;
+      width: 300px;
+      margin: 20px 0;
+  }
+  .header .text .icn {
+display:flex;
+flex-direction: column;
+position: absolute;
+top: 30%;
+left: -50%;
+text-decoration: none;
+color: #232323;
+  }
+  .header .text .icn i:hover{
+    color: #CF9B3C;
+  }
+  .header .text .icn .rotate{
+    width: 100px;
+    transform: rotate(270deg);
+    margin: 40px 0px 40px -45px ;
+    
+
+  }
+  .header .whitetext {
+    color: white;
+    font-size: 160px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: -110px;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 5px;
+  
+  }
+  
+  /* Fading animation */
+  .header .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+
+/* end header  */
+/* start section1  */
+.section1{
+    padding: 60px 0 30px;
+}
+.section1 .container div{
+display: inline-block;
+width: 19%;
+margin: auto;
+padding: auto;
+font-size: 14px;
+color: #232323;
+}
+.section1 .line {
+    
+    border-top: 1px solid #CF9B3C;
+    
+}
+.section1 .gray{
+    color: #808080;
+   
+}
+#stchild{
+    font-size: 18px;
+    
+}
+#stchild span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* end section1  */
+/* start sale  */
+.sale{
+    padding: 40px 0;
+}
+
+.sale .card{
+    display: inline-block;
+    width: 19%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    
+    
+}
+.sale .card img{
+    /* display: inline-block; */
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    transform: scale(1);
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+    
+}
+.sale .card img:hover{
+    transform: scale(1.2);
+    max-height: 100%;
+}
+.sale .card h4{
+    /* display: inline-block; */
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+    
+   
+}
+.card h4:hover {
+    color: #CF9B3C;
+}
+.sale .overlay {
+    /* display: inline-block; */
+    font-size: 14px;
+    color: white;
+    bottom: -50px;
+    transition: all .5 ease-in-out;
+    padding: 12px 15px 13px;
+    width: 100%;
+    background-color: #232323;
+    /* margin: 0; */
+    position: absolute;
+    bottom: -50px;
+    
+}
+.sale .card span{
+  color: lightslategray;
+  font-size: 12px;
+}
+.sale .card:hover .overlay{
+bottom: 0px;
+/* transition: all 3 ease-in-out; */
+/* object-fit: cover; */
+}
+
+/* end sale  */
+/* start shop-collection */
+.shop-collection{
+    margin: 0 30px;
+    padding: 40px 0;
+}
+
+.shop-collection .left,
+.shop-collection .right{
+    display: inline-block;
+    width: 45%;
+    margin: auto;
+   
+}
+.shop-collection img{
+width: 230px;
+padding: 20px;
+float: left;
+}
+.shop-collection .text{
+   width: 43%;
+   /* display: inline-block; */
+   float: left;
+   text-align: left;
+   margin: auto;
+   padding: 50px 20px;
+}
+.shop-collection .text h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+.shop-collection .text button{
+    margin: 30px 10px;
+    padding: 10px 20px;
+    background-color: #232323;
+    color: white;
+    
+    border: 1px solid #232323 ;
+}
+.shop-collection .text button:hover{
+    background-color:white;
+    color: #232323;
+    /* border-color: 232323; */
+}
+/* end shop-collection  */
+/* start Premium-bags */
+.Premium-bags{
+display: flex;
+flex-direction: row;
+
+}
+.Premium-bags .left img{
+ width: 100%;
+ margin: 0;
+}
+.Premium-bags .left{
+    display: inline-flex;
+}
+.Premium-bags .left h3{
+font-size: small;
+}
+.Premium-bags .left h2{
+    width: 80%;
+    }
+.Premium-bags .left .topright,
+.Premium-bags .left .buttomleft{
+    /* width: 50%; */
+    padding:80px 72px;
+    margin: 0;
+   }
+   .Premium-bags .left .topright{
+    background-color: #232323;
+    color: white;
+   }
+   .Premium-bags .left .topright button{
+    /* margin: 0 auto; */
+    padding: 10px 20px;
+    background-color: white;
+    color: #232323;
+    border: 1px solid white ;
+   }
+   .Premium-bags .left .topright button:hover{
+    background-color: #232323;
+    color: white;
+   }
+   .Premium-bags .left .buttomleft{
+    background-color: #CF9B3C;
+   }
+   .Premium-bags .left .buttomleft button{
+    /* margin: 30px 10px; */
+    padding: 10px 20px;
+    background-color: #232323;
+    color: white;
+    
+    border: 1px solid #232323 ;
+   }
+   .Premium-bags .left .buttomleft button:hover{
+    background-color: white;
+    color: #232323;
+   }
+
+
+
+
+.Premium-bags .BG{
+    width: 50%;
+    background-image: url(../img/z.jpeg);
+    float: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* height: 500px; */
+}
+.Premium-bags .BG .overlay{
+    background-color: #232323bb;
+    height: 100%;
+    width: 100%;
+    color: aliceblue;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+.Premium-bags .BG .overlay h3{
+    font-size: 40px;
+    width: 300px;
+}
+.Premium-bags .BG .overlay h4{
+    text-decoration: underline;
+    z-index: 10;
+    /* border-bottom: 1px solid white ; */
+    transition: 1s all ease-in-out;
+    
+}
+.Premium-bags .BG .overlay h4:hover{
+    text-decoration: none;
+    /* border-bottom: 0px; */
+}
+/* end Premium-bags */
+/* start last-section */
+.last-section{
+    padding: 40px 0;
+}
+.last-section img{
+    margin: auto;
+    padding: 10px 80px;
+    transition: all .5s ease-in-out;
+}
+.last-section img:hover{
+    opacity: .5;
+}
+/* end last-section  */
+/* start footer  */
+/* .footer , .foot{
+    background-color: #1E1E1E;
+    color: #808080;
+    padding: 40px 0;
+}
+.footer .main{
+    padding: 30px 10px;
+    margin: auto;
+    
+}
+.footer .main h4{
+    font-size: 16px;
+    font-weight: 600;
+    color: aliceblue;
+}
+.footer .sec{
+    
+    display: inline-block;
+    width: 18%;
+    margin: 0px 10px;
+    padding: 30px 0px 10px;
+}
+.footer .main .icons li{
+    display: inline-block;
+    color: #CF9B3C;
+    width: 30px;
+    padding: 3px;
+    
+}
+.footer .main .icons li i{
+font-size: 17px;
+color: #CF9B3C;
+}
+.footer .main  li i:hover{
+    
+    color: aliceblue;
+}
+ .foot{
+    text-align: center;
+    display: block;
+    padding: 40px 0;
+    
+}
+
+.foot span:hover{
+    color: aliceblue;
+    font-weight: 500;
+    
+}
+.footer li{
+    list-style: none;
+    
+} */
+/* end footer  */
+/* start footer  */
+.footer{
+    background-color: #1E1E1E;
+    color: #808080;
+    
+}
+.footer .container{
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+ .footer .main{
+    padding: 40px 10px ;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+ }
+.footer .main h4{
+    color: aliceblue;
+    text-align: center;
+}
+
+.footer .sec{
+    width: calc(100% /5);
+    margin-left: 10px;
+    position: relative;
+}
+
+.footer .sec ul{
+    list-style-type: none;
+}
+.footer .main .icons li{
+    display: inline-block;
+   
+    width: 20px;
+    margin-top: 10px;
+}
+
+.footer .main .icons li a i{
+font-size: 17px;
+ color: #CF9B3C;
+}
+
+.footer .main .icons li a i:hover{
+    color: aliceblue;
+}
+
+.footer .foot{
+    text-align: center;
+    padding: 20px;
+    border-top: 0.1px solid gray;
+}
+.footer .foot span:hover
+{
+    color: #CF9B3C;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* end footer  */

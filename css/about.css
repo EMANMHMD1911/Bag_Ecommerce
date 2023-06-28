@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* start header  */
+.header{
+    text-align: center;
+    background-image: url(../img/leather-bag-terms-and-conditions-01.jpg);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    color: aliceblue;
+    background-attachment: fixed;
+}
+ .overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.header h1{
+    font-size: 120px;
+    margin: 200px auto 10px;
+}
+.header p{
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+/* end header  */
+/* start section  */
+section {
+    padding: 70px 0;
+    /* display: inline-block; */
+}
+section .left {
+    font-size: 30px;
+    display: inline-block;
+    width: 45%;
+    margin: 30px ;
+}
+section .right{
+    font-size: 15px;
+    width: 45%;
+    margin: 30px ;
+    display: inline-block;
+}
+/* end section  */
+/* start section2  */  
+.bg{
+    text-align: center;
+    background-image: url(../img/bg1.jpg);
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+    color: aliceblue;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.bg .text{
+    padding: 40px;
+    /* background-color: white; */
+    border-radius: 10%;
+    margin: 60px auto;
+    width: 60%;
+}
+
+.bg .text h1{
+    font-size: 40px;
+    color: #CD9A35;
+}
+.bg .text p {
+    font-size: 35px;
+}
+
+
+/* end section2 */
+/* start last sec  */
+.last-sec {
+    padding: 40px 0;
+    position: relative;
+}
+.last-sec img {
+width: 35%;
+margin: 120px;
+display: inline;
+}
+.last-sec .text{
+    display: inline-block;
+width: 40%;
+position: absolute;
+top: 200px;
+
+}
+.last-sec .text h3{
+    font-size: 20px;
+    color: #CD9A35;
+    }
+.last-sec .text h2{
+font-size: 30px;
+margin: 20px 0;
+}
+.last-sec .text p{
+    font-size: 17px;
+    color: dimgray;
+    line-height: 25px;
+    }
+
+
+
+/* end last sec  */

@@ -1,0 +1,89 @@
+[
+	{
+		"id": 1,
+		"image": "images/1.jpg",
+		"name": "Casual Women Bag",
+		"price": "£130.00"
+	 
+		
+	},
+	{
+		"id": 2,
+		"image": "images/2.jpg",
+		"name": "Jeenu Casual Backpack",
+		"price": "£100.00"
+	 
+	},
+	{
+		"id": 3,
+		"image": "images/3.jpg",
+		"name": "Rajni Fashion Bag",
+		"price": "£25.00"
+	 
+	},
+	{
+		"id": 4,
+		"image": "images/4.jpg",
+		"name": "Desence Stylish Backpack",
+		"price": "£150.00",
+		"icon1": "fa-regular ",
+		"icon2":"fa-heart" 
+	},
+	{
+		"id": 5,
+		"image": "images/5.jpg",
+		"name": "Eva Elegant Backpack",
+		"price": "£25.00"
+		
+	},
+	{
+		"id": 6,
+		"image": "images/6.jpg",
+		"name":"Girls Stylish Backpack",
+		"price": "£25.00"
+	 
+	},
+    {
+		"id": 7,
+		"image": "images/7.jpg",
+		"name": "Ridgewood PU Leather",
+		"price": "£25.00"
+	 
+	},
+    {
+		"id": 8,
+		"image": "images/8.jpg",
+		"name": "Zipper Pithu Bag",
+		"price": "£25.00"
+	 
+	},
+    {
+		"id": 9,
+		"image": "images/9.jpg",
+		"name": "Black Women Sling Bag",
+		"price": "£50.00"
+	 
+	},
+    {
+		"id": 10,
+		"image": "images/10.jpg",
+		"name": "Cindy Backpack Medium",
+		"price": "£130.00"
+	 
+	}
+    ,
+    {
+		"id": 11,
+		"image": "images/11.jpg",
+		"name": "Leather Kenton Backpack",
+		"price": "£20.00"
+	 
+	},
+    {
+		"id": 12,
+		"image": "images/12.jpg",
+		"name": "College Stylish Backpack",
+		"price": "£130.00"
+	 
+	}
+]

@@ -1,0 +1,77 @@
+
+/* start login header */
+.loginheader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+/* end  login header */
+/* start section */
+section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+section .container .profilediv{
+    background-color: #F7F7F7;
+    height: 80vh;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgprofile{
+    /* margin-left:170px;
+    margin-right:170px; */
+    /* margin-top: 50px; */
+    border-radius: 50%;
+    width: 200px;
+    height: 200px; 
+}
+i{
+    padding-right: 10px;
+}
+
+.uploadpic *{
+    /* height: 200px;
+    width: 200px; */
+    /* position: absolute  ; */
+    display: block;
+    /* transform:translate(-50%,-50%) ; */
+    /* margin-left:150px;
+    margin-right:150px; */
+    
+
+}
+#file{
+    display: none;
+}
+
+#uploadbtn{
+    /* position: absolute; */
+    /* bottom:0 ; */
+    transform: translateY(-100%);
+    /* left: 50%; */
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+    height: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+
+.uploadpic{
+    margin-left: 150px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid gray;
+}

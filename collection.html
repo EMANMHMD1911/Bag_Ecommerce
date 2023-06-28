@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HONGO | Collection</title>
+    <link rel="stylesheet" href="css/collection.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400;1,500&family=Solitreo&family=Teko:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"
+        integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img  id ="logo "src="images/logo.png">
+            <nav>
+                <ul>
+                    <li onclick="location.href='index.html'">Home <span></span></li>
+                    <li>Collection <span></span></li>
+                    <li onclick="location.href='product.html'">Products <span></span></li>
+                    <li onclick="location.href='about.html'">About us <span></span></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <i onclick="location.href='login.html'" class="fa-regular fa-user"></i>
+                <i onclick="location.href='favorite.html'" class="fa-regular fa-heart"></i>
+                <i onclick="location.href='cart.html'" class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </header> 
+    <div class="clear"></div>
+    <span><i class="fa-solid fa-chevrons-up"></i></span>
+    <div class=backimg>
+        <div class="overlay">
+            <h1>Collection</h1>
+            <p>Highly creative and flexible elements</p>
+        </div>
+    </div>
+    <section class="parent">
+        <div class="list" style="color: black;">
+            <p onclick="black()" class="p1">Black Bags</p>
+            <p onclick="brown()" class="p2">Brown Bags</p>
+            <p onclick="caramel()" class="p3">Caramel Bags</p>
+        </div>
+        <div class="products">
+            <div class="bag">
+                <img src="img/black/1.jpg" class="img">
+                <div class="img_overlay">
+                    <div class="icons">
+                        <div class="icon">
+                            <i id="icon"  class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="icon">
+                            <i id="icon"  class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <p onclick="location.href='product.html'" style="color: white;text-decoration: underline; cursor: pointer;">Check It Now</p>
+                </div>
+            </div>
+
+            <div class="bag">
+                <img src="img/black/2.jpg" class="img">
+                <div class="img_overlay">
+                    <div class="icons">
+                        <div class="icon">
+                            <i id="icon" class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="icon">
+                            <i id="icon"  class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <p onclick="location.href='product.html'" style="color: white;text-decoration: underline; cursor: pointer;">Check It Now</p>
+                </div>
+            </div>
+            <div class="bag">
+                <img src="img/black/3.jpg" class="img">
+                <div class="img_overlay">
+                    <div class="icons">
+                        <div class="icon">
+                            <i id="icon"  class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="icon">
+                            <i id="icon"  class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <p onclick="location.href='product.html'" style="color: white;text-decoration: underline; cursor: pointer;">Check It Now</p>
+                </div>
+            </div>
+
+            <div class="bag">
+                <img src="img/black/4.jpg" class="img">
+                <div class="img_overlay">
+                    <div class="icons">
+                        <div class="icon">
+                            <i id="icon"  class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="icon">
+                            <i id="icon"  class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <p onclick="location.href='product.html'" style="color: white;text-decoration: underline; cursor: pointer;">Check It Now</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="product_dis">
+            <p>Product Description</p>
+            <p>Product Description</p>
+            <p>Product Description</p>
+            <p>Product Description</p>
+        </div>
+   
+    <script src="collection.js"></script>
+</body>
+
+</html>

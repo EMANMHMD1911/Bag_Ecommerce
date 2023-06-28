@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <title>HONGO | Products</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- main style file -->
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="https://kit.fontawesome.com/adc5c6a0d2.js" crossorigin="anonymous"></script>
+    <style>
+        .cartdiv{
+            position: fixed;
+            top: 0;
+            right:0;
+            width: 360px;
+            min-height: 100vh;
+            padding: 20px;
+            background-color: white;
+            transition: .3s;
+        }
+        .cartdiv.active{
+            right: 0;
+        }
+
+        .cartdiv h3{
+            text-align: center;
+        } 
+        .box{
+            display: grid;
+            grid-template-columns: 32% 50% 18% ;
+            align-items: center;
+            gap: 1rem; ;
+            margin-top: 1rem ;
+        }
+        .cartimg{
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            padding: 10px;
+        }
+        .details{
+            display: grid;
+            row-gap: .5rem;
+        }
+        .bagtitle{
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+        .bagprice{
+            font-weight: 500;
+        }
+        .quantity{
+            border: 1px solid ;
+            width: 2.4rem;
+            text-align: center;
+            font-size: 1rem;
+        }
+        .total{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 1.5rem;
+            border-top: 1px solid;
+        }
+        .total-title{
+            font-size: 1rem;
+            font-size: 600;
+        }
+        .total-price{
+            margin-left: .5rem;
+
+        }
+        .btnbuy{
+            display: flex;
+            margin: 1.5rem auto 0 auto;
+            padding: 12px 20px;
+            border: none;
+            background-color: black;
+            color: wheat;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+
+        }
+        .btnbuy:hover{
+
+        }
+        #closecart{
+            position: absolute;
+            top: 1rem;
+            right: .8rem;
+           
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- start header -->
+    <header>
+        <div class="container">
+            <img  id ="logo "src="images/logo.png">
+            <nav>
+                <ul>
+                    <li onclick="location.href='index.html'">Home <span></span></li>
+                    <li onclick="location.href='collection.html'">Collection<span></span></li>
+                    <li>Products<span></span></li>
+                    <li onclick="location.href='about.html'">About us<span></span></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <i onclick="location.href='account.html'" class="fa-regular fa-user"></i>
+                <i  onclick="location.href='favorite.html'" class="fa-regular fa-heart"></i>
+                <i  id="carticon" onclick="location.href='cart.html'" class="fa-solid fa-cart-shopping"></i>
+                <div class="cartdiv">
+                    <h3>your cart</h3>
+                    <div class="cartbag">
+                        
+                    </div>
+                    <div class="total">
+                       <div class="total-title" >Total</div> 
+                       <div class="total-price"> 0</div>
+                    </div>
+                    <button type="button" class="btnbuy">Buy now</button>
+                    <i class="fa-solid fa-xmark" id="closecart"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="loginheader">
+            <h3>My account</h3>
+            <div class="links">
+                <ul>
+                    <li>Home</li>
+                    <li>My account</li>
+                </ul>
+        </div>
+    </div>
+    <div  class="bla">
+        
+        <section class ="shop">
+
+            <h1 id="Title">All Products</h1>
+            <div class="nav-bar"></div>
+            
+            </div>
+
+            <div class="item" id="1" >
+                <img src="images/1.jpg" alt=""onclick="openproduct(this)">
+                <p class="name"onclick="openproductbyname(this)"  >Casual Women Bag</p>
+                <p><del>£150.00 </del>&emsp;£130.00</p>
+                <p onclick="addToCart(1)" class="Addtocart">Add To Cart</p>
+                <i class="fa-regular fa-heart" onclick="changecolor(this);addToFav(1)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item" id="2">
+                <img src="images/2.jpg" alt=""onclick="openproduct(this)">
+                <p class="name"onclick="openproductbyname(this)"  >Jeenu Casual Backpack</p>
+                <p><del>£150.00 </del>&emsp;£100.00</p>
+                <p onclick="addToCart(2)" class="Addtocart">Add To Cart</p>
+                <i class="fa-regular fa-heart" onclick=" changecolor(this);addToFav(2)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item" id="3">
+                <img src="images/3.jpg" alt=""onclick="openproduct(this)">
+                <p class="name"  onclick="openproductbyname(this)">Rajni Fashion Bag</p>
+                <p><del>£50.00 </del>&emsp; £25.00</p>
+                <p  onclick="addToCart(3)"class="Addtocart">Add To Cart</p>
+                <i  class="fa-regular fa-heart" onclick="changecolor(this);addToFav(3)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item" id="4">
+                <img src="images/4.jpg" alt="" onclick="openproduct(this)">
+                <p class="name" onclick="openproductbyname(this)">Desence Stylish Backpack</p>
+                <p><del>£180.00 </del>&emsp;£150.00</p>
+                <p onclick="addToCart(4)" class="Addtocart">Add To Cart</p>
+                <i  class="fa-regular fa-heart" onclick="changecolor(this);addToFav(4)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item" id="5">
+                <img src="images/5.jpg" alt="" onclick="openproduct(this)">
+                <p class="name"  onclick="openproductbyname(this)">Eva Elegant Backpack</p>
+                <p><del>£50.00  </del>&emsp;£25.00</p>
+                <p onclick="addToCart(5)" class="Addtocart">Add To Cart</p>
+                <i  class="fa-regular fa-heart" onclick="changecolor(this);addToFav(5)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item" id="6">
+                <img src="images/6.jpg" alt="" onclick="openproduct(this)">
+                <p class="name"  onclick="openproductbyname(this)">Girls Stylish Backpack</p>
+                <p><del>£50.00 </del>&emsp;£25.00</p>
+                <p onclick="addToCart(6)" class="Addtocart">Add To Cart</p>
+                <i  class="fa-regular fa-heart" onclick="changecolor(this);addToFav(6)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item" id="7">
+                <img src="images/7.jpg" alt=""onclick="openproduct(this)">
+                <p class="name"  onclick="openproductbyname(this)">Ridgewood PU Leather</p>
+                <p><del>£50.00  </del>&emsp;£25.00</p>
+                <p onclick="addToCart(7)" class="Addtocart">Add To Cart</p>
+                <i  class="fa-regular fa-heart" onclick="changecolor(this);addToFav(7)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item" id="8">
+                <img src="images/8.jpg" alt=""onclick="openproduct(this)">
+                <p class="name" onclick="openproductbyname(this)">Zipper Pithu Bag</p>
+                <p><del>£50.00 </del>&emsp;£25.00</p>
+                <p onclick="addToCart(8)" class="Addtocart">Add To Cart</p>
+                <i  class="fa-regular fa-heart" onclick="changecolor(this);addToFav(8)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item" id="9">
+                <img src="images/9.jpg" alt="" onclick="openproduct(this)">
+                <p class="name" onclick="openproductbyname(this)">Black Women Sling Bag</p>
+                <p><del>£150.00 </del>&emsp;£50.00</p>
+                <p onclick="addToCart(9)"class="Addtocart">Add To Cart</p>
+                <i  class="fa-regular fa-heart" onclick="changecolor(this);addToFav(9)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item" id="10">
+                <img src="images/10.jpg" alt="" onclick="openproduct(this)">
+                <p class="name" onclick="openproductbyname(this)">Cindy Backpack Medium</p>
+                <p><del>£510.00 </del>&emsp;£130.00</p>
+                <p onclick="addToCart(10)" class="Addtocart">Add To Cart</p>
+                <i class="fa-regular fa-heart" onclick="changecolor(this);addToFav(10)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item" id="11">
+                <img src="images/11.jpg" alt="" onclick="openproduct(this)">
+                <p class="name" onclick="openproductbyname(this)">Leather Kenton Backpack</p>
+                <p><del>  £50.00 </del>&emsp;£20.00</p>
+                <p onclick="addToCart(11)" class="Addtocart">Add To Cart</p>
+                <i class="fa-regular fa-heart" onclick="changecolor(this) ;addToFav(11)"></i>
+                <i class="fa-regular fa-eye" onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item" id="12">
+                <img src="images/12.jpg" alt=""onclick="openproduct(this)">
+                <p class="name" onclick="openproductbyname(this)">College Stylish Backpack</p>
+                <p><del>£150.00 </del>&emsp;£130.00</p>
+                <p onclick="addToCart(12)" class="Addtocart">Add To Cart</p>
+                <i  class="fa-regular fa-heart" onclick="changecolor(this);addToFav(12)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+
+            
+        </section>
+<div  style="clear: both;"></div>
+
+    <!-- </div> -->
+    
+            
+        
+    <!-- end login section -->
+    <!-- start footer  -->
+    <div class="footer">
+        <div class="container">
+            <div class="main">
+                <div class="sec">
+                    <h4>About company overview</h4>
+                    <p>Big clothes brand hongo. Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem ipsum.</p>
+                    <ul class="icons">
+                        <li> <a href=""><i class="fa-brands fa-cc-visa"></i></a></li>
+                        <li> <a href=""><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-cc-apple-pay"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-cc-paypal"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-cc-amazon-pay"></i></a></li>
+                    </ul>
+                </div>
+                <div class="sec">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li>Women collection</li>
+                        <li>Men collection</li>
+                        <li>Child collection</li>
+                        <li>Accessories</li>
+                        <li>Leather shoes</li>
+                    </ul>
+                </div><div class="sec">
+                    <h4>Customer</h4>
+                    <ul>
+                        <li>Help and support</li>
+                        <li>Shipping and delivery</li>
+                        <li>Payment method</li>
+                        <li>Terms and conditions</li>
+                        <li>Privacy policy</li>
+                    </ul>
+                </div><div class="sec">
+                    <h4>Store contact info</h4>
+                    <ul>
+                        <li>Phone: +1 234 567 890</li>
+                        <li>Fax: +1 234 567 890</li>
+                        <li>Address: 12 st anonymous</li>
+                        <li>Email: info@domain.com</li>
+                        <li><ul class="icons">
+                            <li> <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li> <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li> <a href=" https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li> <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i> </a></li>
+                            <li> <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i> </a></li>
+                        </ul></li>
+                    </ul>
+                </div><div class="sec">
+                    <h4>Last chance to win our discount!</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text.</p>
+                    
+                </div>
+            </div>
+            <div class="foot">
+                <p>&copy;2023 HONGO is Proudly Powered by <span>3E2F <i class="fa-regular fa-heart"></i></span></p>
+            </div>
+        </div>
+    </div>
+    <!-- end footer  -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+    <script>
+        function changecolor(icon){
+            var clickstate=icon.classList.value
+            if(clickstate==="fa-regular fa-heart" )
+                {
+                icon.setAttribute("class", "fa-solid fa-heart");
+                    } 
+            else {
+                icon.setAttribute("class", "fa-regular fa-heart");
+                }
+        }
+        function openproduct(image1){
+            var imagenumber=image1.getAttribute("src").split("/")[1].split(".")[0]
+            open("products/Product"+imagenumber+"/product"+imagenumber+".html")
+        }
+        function openproductbyname(getnum){
+            var num= getnum.parentElement.querySelector("img").getAttribute("src").split("/")[1].split(".")[0]
+            open("products/Product"+num+"/product"+num+".html")
+        }
+
+        function viewproduct(getnumb){
+            var numb= getnumb.parentElement.querySelector("img").getAttribute("src").split("/")[1].split(".")[0]
+            open("products/Product"+numb+"/product"+numb+"slideshare.html","width=300,height=300","screen x=50","screen y=50")
+        }
+     </script>
+     <script src="index.js"></script>
+     <script src="favorite.js"></script>
+     <script src="cart.js"></script>
+     <script src="divcart.js"></script>
+</body>
+</html>
